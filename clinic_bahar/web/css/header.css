@@ -1,0 +1,62 @@
+* {
+    font-family: "Poppins", sans-serif;
+}
+
+h2 {
+    color: #096A2E;
+}
+
+body {
+    background:
+        conic-gradient(#ffffff 25%, #0000 0) 0 0/calc(2*68px) calc(68px/9.5),
+        conic-gradient(#ffffff 25%, #0000 0) 0 0/calc(68px/9.5) calc(2*68px),
+        repeating-conic-gradient(#0000 0 25%, #ffffff 0 50%) 68px 0 /calc(2*68px) calc(2*68px),
+        radial-gradient(50% 50%, #398378 98%, #ffffff) 0 0/68px 68px;
+}
+
+div#header {
+    padding: 8px 48px;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    flex-direction: row;
+    height: 4%;
+    background: #9d9d9d;
+    z-index: 1;
+}
+
+div #logo {
+    margin-right: 64px;
+}
+
+#header button {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    border: none;
+    background: none;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+}
+
+button::before {
+    margin-left: auto;
+}
+
+button::after,
+button::before {
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #096A2E;
+    display: block;
+    transition: 0.5s;
+}
+
+button:hover::after,
+button:hover::before {
+    width: 100%;
+}
