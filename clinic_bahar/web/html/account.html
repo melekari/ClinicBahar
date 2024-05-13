@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/account.css">
+    <script src="../js/router.js"></script>
+    <title>Account</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/siimple/siimple.css" />
+</head>
+
+<body>
+    <div id="header">
+        <a id="logo" href="index.html">
+            <img width="128" src="/clinic_bahar/assets/png/logo-no-background.png" alt="clinic_bahar">
+        </a>
+        <button onclick="toHome()">Anasayfa</button>
+        <button>Randevu</button>
+        <button>İletişim</button>
+    </div>
+    <div class="card" id="center-content">
+        <div class="main">
+            <input type="checkbox" id="chk" aria-hidden="true">
+
+            <div class="login">
+                <form class="form">
+                    <label for="chk" aria-hidden="true">Log in</label>
+                    <input class="input" type="email" name="email" placeholder="Email" required="">
+                    <input class="input" type="password" name="pswd" placeholder="Password" required="">
+                    <button>Log in</button>
+                </form>
+            </div>
+
+            <div class="register">
+                <form class="form">
+                    <label for="chk" aria-hidden="true">Register</label>
+                    <input class="input" type="text" name="txt" placeholder="Username" required="">
+                    <input class="input" type="email" name="email" placeholder="Email" required="">
+                    <input class="input" type="password" name="pswd" placeholder="Password" required="">
+                    <button>Register</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

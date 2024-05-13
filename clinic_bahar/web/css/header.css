@@ -32,6 +32,11 @@ div #logo {
     margin-right: 64px;
 }
 
+div #logo img {
+    max-width: 128px;
+    max-height: auto;
+}
+
 #header button {
     color: #fff;
     text-decoration: none;
@@ -42,12 +47,12 @@ div #logo {
     font-family: 'Poppins', sans-serif;
 }
 
-button::before {
+#header button::before {
     margin-left: auto;
 }
 
-button::after,
-button::before {
+#header button::after,
+#header button::before {
     content: '';
     width: 0%;
     height: 2px;
@@ -56,7 +61,16 @@ button::before {
     transition: 0.5s;
 }
 
-button:hover::after,
-button:hover::before {
+#header button:hover::after,
+#header button:hover::before {
     width: 100%;
+}
+
+.card {
+    padding: 16px 32px;
+    margin-bottom: 24px;
+    border-radius: 50px;
+    background: #e0e0e0;
+    box-shadow: 20px 20px 60px #bebebe,
+        -20px -20px 60px #ffffff;
 }
