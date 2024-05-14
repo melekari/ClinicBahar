@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/contact.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script src="../js/router.js"></script>
+    
+    
+    <title>İletişim</title>
+    
+</head>
+
+<body>
+    <div id="header">
+        <a id="logo" href="index.html">
+            <img width="128" src="/clinic_bahar/assets/png/logo-no-background.png" alt="clinic_bahar">
+        </a>
+        <button onclick="toHome()">Anasayfa</button>
+        <button onclick="toAppointment()">Randevu</button>
+        <button onclick="toContact()">İletişim</button>
+        <button onclick="toAccount()">
+            <span class="fa-regular fa-user"></span>
+        </button>
+    </div>
+    <div class="center-container">
+    <div id="map"></div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/leaflet.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/leaflet.css" />
+    <script src="../js/map.js"></script>
+    
+</body>
+
+</html>

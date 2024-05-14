@@ -1,0 +1,13 @@
+#map {
+    height: 400px;
+    width: 100%;
+    max-width: 1024px;
+    max-height: 1024px;
+  }
+
+.center-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 16px;
+  }

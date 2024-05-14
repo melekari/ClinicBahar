@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/appointment.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script src="../js/router.js"></script>
+    <script src="../js/email.js"></script>
+    <title>İletişim</title>
+
+</head>
+
+<body>
+    <div id="header">
+        <a id="logo" href="index.html">
+            <img width="128" src="/clinic_bahar/assets/png/logo-no-background.png" alt="clinic_bahar">
+        </a>
+        <button onclick="toHome()">Anasayfa</button>
+       <button onclick="toAppointment()">Randevu</button>
+        <button onclick="toContact()">İletişim</button>
+        <button onclick="toAccount()">
+            <span class="fa-regular fa-user"></span>
+        </button>
+        
+    </div>
+    <div class="center-container">
+        
+        <div class="contact-form">
+            <span class="heading">Randevu Kayıt Formu</span>
+            <form onsubmit="return sendEmail()">
+                <label for="name">İsim Soyisim:</label>
+                <input type="text" id="name" required="">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required="">
+                <label for="phone">Telefon:</label>
+                <input type="text" id="phone" required="">
+                <label for="message">Mesaj:</label>
+                <textarea id="message" name="message" required=""></textarea>
+                <button type="submit">Gönder</button>
+            </form>
+        </div>
+        
+    </div>
+</body>
+
+</html>
