@@ -4,3 +4,6 @@ function toHome() {
 function toAccount() {
     window.location.href = "../html/account.html";
 }
+function toProfile() {
+    window.location.href = "../html/profile.html";
+}

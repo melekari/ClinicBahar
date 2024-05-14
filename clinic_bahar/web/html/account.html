@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/header.css">
     <link rel="stylesheet" href="../css/account.css">
+    <script type="module" src="../js/auth/auth.js"></script>
     <script src="../js/router.js"></script>
     <title>Account</title>
 
@@ -26,22 +27,24 @@
             <input type="checkbox" id="chk" aria-hidden="true">
 
             <div class="login">
-                <form class="form">
+                <div class="form">
                     <label for="chk" aria-hidden="true">Log in</label>
-                    <input class="input" type="email" name="email" placeholder="Email" required="">
-                    <input class="input" type="password" name="pswd" placeholder="Password" required="">
-                    <button>Log in</button>
-                </form>
+                    <input id="signin-mail" class="input" type="email" name="email" placeholder="Email" required="">
+                    <input id="signin-pswd" class="input" type="password" name="pswd" placeholder="Password"
+                        required="">
+                    <button id="btnSignin" type="submit" value="Send">Log in</button>
+                </div>
             </div>
 
             <div class="register">
-                <form class="form">
+                <div class="form">
                     <label for="chk" aria-hidden="true">Register</label>
-                    <input class="input" type="text" name="txt" placeholder="Username" required="">
-                    <input class="input" type="email" name="email" placeholder="Email" required="">
-                    <input class="input" type="password" name="pswd" placeholder="Password" required="">
-                    <button>Register</button>
-                </form>
+                    <input id="signup-name" class="input" type="text" name="txt" placeholder="Username" required="">
+                    <input id="signup-mail" class="input" type="email" name="email" placeholder="Email" required="">
+                    <input id="signup-pswd" class="input" type="password" name="pswd" placeholder="Password"
+                        required="">
+                    <button id="btnSignup" type="submit" value="send">Register</button>
+                </div>
             </div>
         </div>
     </div>

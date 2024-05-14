@@ -1,0 +1,76 @@
+// Import the functions you need from the SDKs you need
+import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-app.js";
+import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-analytics.js";
+import { getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-auth.js";
+
+// Your web app's Firebase configuration
+// For Firebase JS SDK v7.20.0 and later, measurementId is optional
+const firebaseConfig = {
+    apiKey: "AIzaSyD42l6piqsuW2yPuhFiEiLyhhz8iHRh-V8",
+    authDomain: "clinic-69f76.firebaseapp.com",
+    projectId: "clinic-69f76",
+    storageBucket: "clinic-69f76.appspot.com",
+    messagingSenderId: "644331833450",
+    appId: "1:644331833450:web:96f9990b94fe3c1f4fe213",
+    measurementId: "G-Y793VC9GE0"
+};
+
+// Initialize Firebase
+const app = initializeApp(firebaseConfig);
+const analytics = getAnalytics(app);
+const auth = getAuth(app);
+
+const signUpBtn = document.getElementById('btnSignup');
+const signInBtn = document.getElementById('btnSignin');
+const signUpMail = document.getElementById("signup-mail");
+const signUpPassword = document.getElementById("signup-pswd");
+const signInMail = document.getElementById("signin-mail");
+const signInPassword = document.getElementById("signin-pswd");
+
+function signInWithEmailPassword() {
+    var email = signInMail.value;
+    var password = signInPassword.value;
+
+    console.log(email, password);
+
+    // [START auth_signin_password]
+    signInWithEmailAndPassword(auth, email, password)
+        .then((userCredential) => {
+            // Signed in
+            var user = userCredential.user;
+            toProfile();
+            // ...
+        })
+        .catch((error) => {
+            var errorCode = error.code;
+            var errorMessage = error.message;
+            console.log(errorCode, errorMessage);
+        });
+    // [END auth_signin_password]
+}
+
+function signUpWithEmailPassword() {
+    var name = document.getElementById("signup-name");
+    var email = signUpMail.value;
+    var password = signUpPassword.value;
+
+    console.log(email, password);
+
+    // [START auth_signup_password]
+    createUserWithEmailAndPassword(auth, email, password)
+        .then((userCredential) => {
+            // Signed in 
+            var user = userCredential.user;
+            alert('Account created successfully. Please SignIn to your account.');
+            // ...
+        })
+        .catch((error) => {
+            var errorCode = error.code;
+            var errorMessage = error.message;
+            console.log(errorCode, errorMessage);
+        });
+    // [END auth_signup_password]
+}
+
+signUpBtn.addEventListener('click', signUpWithEmailPassword);
+signInBtn.addEventListener('click', signInWithEmailPassword);
