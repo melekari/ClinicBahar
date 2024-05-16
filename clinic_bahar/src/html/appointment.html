@@ -41,17 +41,17 @@
         
       <div class="contact-form">
             <span class="heading">Randevu Kayıt Formu</span>
-            <form onsubmit="return sendMail()">
+            <div>
                 <label for="name">İsim Soyisim:</label>
-                <input type="text" id="name" required="">
+                <input type="text" id="name" required>
                 <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required="">
+                <input type="email" id="email" name="email" required>
                 <label for="phone">Telefon:</label>
-                <input type="text" id="phone" required="">
+                <input type="text" id="phone" required>
                 <label for="message">Mesaj:</label>
-                <input type="text" id="message" name="message" required="">
+                <textarea type="text" id="message" name="message" required></textarea>
                 <button type="submit" onclick="sendMail()">Gönder</button>
-            </form>
+            </div>
         </div>
         
     </div>
