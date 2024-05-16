@@ -11,3 +11,11 @@
     align-items: center;
     margin-top: 16px;
   }
+
+.row-content {
+  margin-top: 8px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: #f2f2f2;
+}

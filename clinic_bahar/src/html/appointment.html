@@ -39,9 +39,9 @@
     </div>
     <div class="center-container">
         
-        <div class="contact-form">
+      <div class="contact-form">
             <span class="heading">Randevu Kayıt Formu</span>
-            <form onsubmit="return sendEmail()">
+            <form onsubmit="return sendMail()">
                 <label for="name">İsim Soyisim:</label>
                 <input type="text" id="name" required="">
                 <label for="email">Email:</label>
@@ -49,12 +49,14 @@
                 <label for="phone">Telefon:</label>
                 <input type="text" id="phone" required="">
                 <label for="message">Mesaj:</label>
-                <textarea id="message" name="message" required=""></textarea>
+                <input type="text" id="message" name="message" required="">
                 <button type="submit" onclick="sendMail()">Gönder</button>
             </form>
         </div>
         
     </div>
+   
+
 </body>
 
 </html>
