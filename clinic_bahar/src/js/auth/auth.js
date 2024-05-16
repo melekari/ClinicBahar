@@ -9,11 +9,12 @@ import { getDatabase, ref, set } from "https://www.gstatic.com/firebasejs/10.12.
 const firebaseConfig = {
     apiKey: "AIzaSyD42l6piqsuW2yPuhFiEiLyhhz8iHRh-V8",
     authDomain: "clinic-69f76.firebaseapp.com",
+    databaseURL: "https://clinic-69f76-default-rtdb.europe-west1.firebasedatabase.app",
     projectId: "clinic-69f76",
     storageBucket: "clinic-69f76.appspot.com",
     messagingSenderId: "644331833450",
-    appId: "1:644331833450:web:96f9990b94fe3c1f4fe213",
-    measurementId: "G-Y793VC9GE0"
+    appId: "1:644331833450:web:bf2edd143a8e3f734fe213",
+    measurementId: "G-27HNHFQKLF"
 };
 
 // Initialize Firebase
