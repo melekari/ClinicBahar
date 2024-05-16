@@ -11,17 +11,16 @@
     <script src="../js/email.js"></script>
     <title>İletişim</title>
 
-    <script type="text/javascript"
-    src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
     </script>
     <script type="text/javascript">
-    (function(){
-       emailjs.init({
-       publicKey: "ReBNROvUztgbj_AoQ",
-      });
-    })();
+        (function () {
+            emailjs.init({
+                publicKey: "ReBNROvUztgbj_AoQ",
+            });
+        })();
     </script>
-    
+
 </head>
 
 <body>
@@ -30,16 +29,16 @@
             <img width="128" src="/clinic_bahar/assets/png/logo-no-background.png" alt="clinic_bahar">
         </a>
         <button onclick="toHome()">Anasayfa</button>
-       <button onclick="toAppointment()">Randevu</button>
+        <button onclick="toAppointment()">Randevu</button>
         <button onclick="toContact()">İletişim</button>
         <button onclick="toAccount()">
             <span class="fa-regular fa-user"></span>
         </button>
-        
+
     </div>
     <div class="center-container">
-        
-      <div class="contact-form">
+
+        <div class="contact-form">
             <span class="heading">Randevu Kayıt Formu</span>
             <div>
                 <label for="name">İsim Soyisim:</label>
@@ -50,12 +49,12 @@
                 <input type="text" id="phone" required>
                 <label for="message">Mesaj:</label>
                 <textarea type="text" id="message" name="message" required></textarea>
-                <button type="submit" onclick="sendMail()">Gönder</button>
+                <button id="btnSend" onclick="sendMail()">Gönder</button>
             </div>
         </div>
-        
+
     </div>
-   
+
 
 </body>
 
