@@ -21,7 +21,6 @@ div#header {
     top: 0px;
     display: flex;
     align-items: center;
-    width: 100%;
     flex-direction: row;
     height: 4%;
     background: #9d9d9d;
@@ -73,4 +72,24 @@ div #logo img {
     background: #e0e0e0;
     box-shadow: 20px 20px 60px #bebebe,
         -20px -20px 60px #ffffff;
+}
+
+footer {
+    background: #3C3C3C;
+    color: #FFF;
+    padding: 18px;
+    margin-top: 64px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+footer div a {
+    color: #FFF;
+    margin-right: 6px;
+}
+
+footer div a:hover {
+    color: #096A2E;
 }

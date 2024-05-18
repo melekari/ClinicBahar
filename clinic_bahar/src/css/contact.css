@@ -1,16 +1,16 @@
 #map {
-    height: 400px;
-    width: 100%;
-    max-width: 1024px;
-    max-height: 1024px;
-  }
+  height: 400px;
+  width: 100%;
+  max-width: 768px;
+  max-height: 512px;
+}
 
 .center-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 16px;
-  }
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 16px;
+}
 
 .row-content {
   margin-top: 8px;

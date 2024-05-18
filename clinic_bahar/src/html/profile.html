@@ -4,8 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/clinic_bahar/assets/favicon/clinic-bahar-favicon-color.png" type="image/x-icon">
     <link rel="stylesheet" href="../css/header.css">
-    <link rel="stylesheet" href="../css/account.css">
+    <link rel="stylesheet" href="../css/profile.css">
+    <script src="../js/accordion.js"></script>
     <script type="module" src="../js/auth/user_profile.js"></script>
     <script src="../js/router.js"></script>
     <title>Account</title>
@@ -29,11 +31,23 @@
         <p id="user-email"></p>
         <p id="user-treatment"></p>
     </div>
-    <div class="card form">
-        <label>Update profile</label>
-        <input id="txtUserName" class="input" type="text" name="txt" placeholder="Username">
-        <button id="btnSave" type="submit" value="send">Save</button>
+    <div class="card">
+        <button onclick="accordion('updateElements')">Update profile</button>
+        <div id="updateElements" class="hide">
+            <input id="txtUserName" class="input" type="text" name="txt" placeholder="Username">
+            <button id="btnSave" type="submit" value="send">Save</button>
+        </div>
     </div>
 </body>
+<footer>
+    <div>
+        Bahar Clinic. MIT License.
+    </div>
+    <div>
+        <a href="https://www.linkedin.com/in/kemal-anil-guvenc/">Kemal Anıl Güvenç</a>
+        <a href="https://www.linkedin.com/in/melek-ari/">Melek Arı</a>
+        <a href="https://github.com/melekari/ClinicBahar">Project</a>
+    </div>
+</footer>
 
 </html>

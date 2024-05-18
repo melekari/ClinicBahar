@@ -1,72 +1,73 @@
 .contact-form {
-    background-color: #f2f2f2;
-    padding: 20px;
-    border-radius: 10px;
-    max-width: 512px;
-    max-height: 1024px;
-  }
+  background-color: #f2f2f2;
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 512px;
+  max-height: 1024px;
+}
 
-  .center-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 16px;
-  }
-  
-  .contact-form label {
-    color: black;
-  }
-  
-  .contact-form .heading {
-    font-size: 24px;
-    color: #096A2E;
-    ;
-    margin-bottom: 12px;
-    font-weight: bold;
-    display: block;
-  }
-  
-  .contact-form form {
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .contact-form label {
-    margin-bottom: 10px;
-  }
-  
-  textarea {
-    resize: none;
-    height: 80px;
-    width: 200px;
-  }
-  
-  .contact-form input, .contact-form textarea {
-    padding: 10px;
-    border: none;
-    border-radius: 5px;
-    margin-bottom: 20px;
-  }
-  
-  .contact-form input:focus, .contact-form textarea:focus {
-    outline: none;
-    box-shadow: 0 0 5px #2cb5a0;
-    transform: scale(1.05);
-    transition: transform 0.3s ease-in-out;
-  }
-  
-  .contact-form button[type="submit"] {
-    background-color: #096A2E;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    padding: 10px 20px;
-    font-size: 16px;
-    cursor: pointer;
-  }
-  
-  .contact-form button[type="submit"]:hover {
-    transform: scale(1.1);
-    transition: transform 0.3s ease-in-out;
-  }
-  
+.center-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 16px;
+}
+
+.contact-form label {
+  color: black;
+}
+
+.contact-form .heading {
+  font-size: 24px;
+  color: #096A2E;
+  ;
+  margin-bottom: 12px;
+  font-weight: bold;
+  display: block;
+}
+
+.contact-form div {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-form label {
+  margin-bottom: 10px;
+}
+
+textarea {
+  resize: none;
+  height: 80px;
+  width: 200px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  outline: none;
+  box-shadow: 0 0 5px #2cb5a0;
+  transform: scale(1.05);
+  transition: transform 0.3s ease-in-out;
+}
+
+.contact-form button {
+  background-color: #096A2E;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.contact-form button:hover {
+  transform: scale(1.1);
+  transition: transform 0.3s ease-in-out;
+}
